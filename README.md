@@ -5,62 +5,7 @@ How configure a machne with overcommit_memory set to 2, and stillbe able to ssh 
       <div class="post-header">
         
 
-<div class="container">
-  <ul class="list-breadcrumb">
-    <li><a href="/">Home</a></li>
-    
-    
-      <li class="current"><span>Post</span></li>
-    
-    
-    
-  </ul>
-</div>
-
-        <div class="phxxl pvl">
-          <h1 class="title em-low type-dark-1 mvn">
-            
-            Virtual memory settings in Linux - The Problem with Overcommit
-          </h1>
-          <h2 class="h3 type-dark-3 em-default mvn post-summary">How to tune the Memory Overcommit settings in Linux</h2>
-          <div class="type-dark-5 em-default">
-            Posted on
-            <span class="post-date"> Sat, Jul 2, 2016 </span>
-            
-            
-            by
-            <ul class="authors">
-            
-              
-                <li><a href="/authors/ascherbaum">Andreas Scherbaum</a></li>
-              
-            
-            </ul>
-            <br>
-            
-              Categories: &nbsp;
-                
-                  <a href="/categories/linux">Linux</a> &nbsp;&nbsp;
-                
-                  <a href="/categories/greenplum-database">Greenplum Database</a> &nbsp;&nbsp;
-                
-                  <a href="/categories/virtual-memory">Virtual Memory</a> &nbsp;&nbsp;
-                
-                  <a href="/categories/overcommit">Overcommit</a> &nbsp;&nbsp;
-                
-                <br>
-              
-            
-            <a href="https://github.com/pivotal-legacy/blog/edit/master/content/post/Virtual_memory_settings_in_Linux_-_The_problem_with_Overcommit.md" class="type-sm">Edit this post on GitHub.</a>
-            <div class="pull-right">
-              <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 75px; height: 28px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.2349b7ea03933b93cf1e9e9f69dac37a.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fengineering.pivotal.io%2Fpost%2Fvirtual_memory_settings_in_linux_-_the_problem_with_overcommit%2F&amp;size=l&amp;text=%C2%B7%20Pivotal%20Engineering%20Journal&amp;time=1567642030427&amp;type=share&amp;url=http%3A%2F%2Fengineering.pivotal.io%2Fpost%2Fvirtual_memory_settings_in_linux_-_the_problem_with_overcommit%2F&amp;via=ascherbaum%20" frameborder="0"></iframe>
-            </div>
-          </div>
-          <hr>
-        </div>
-      </div>
-      <div class="panel-body phxxl pvn">
-        
+      
 
 <p><a href="http://greenplum.org/">Greenplum Database</a> users sometimes add more RAM to their segment servers, but forget to adapt the Memory Overcommit settings to make use of all the new memory. After such an upgrade, at first glance, not much happens - except that the system is not using all the memory. But unless you take a close look at the memory usage on the segment hosts, you will not see that some memory goes unused.</p>
 
